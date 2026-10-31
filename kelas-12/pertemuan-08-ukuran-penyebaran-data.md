@@ -1,4 +1,4 @@
-# MATEMATIKA SMA (JURUSAN IPA & PESANTREN)
+﻿# MATEMATIKA SMA (JURUSAN IPA & PESANTREN)
 ## Kelas 12 - Semester Ganjil
 ### Pertemuan 8: Statistika Deskriptif — Ukuran Penyebaran Data
 
@@ -27,26 +27,23 @@ Ukuran penyebaran data dibedakan menjadi ukuran penyebaran sederhana (berdasarka
 1. **Jangkauan / Rentang (*Range* - $R$):**
    Selisih antara nilai data terbesar ($X_{\max}$) dengan nilai data terkecil ($X_{\min}$):
 
-
-
+$$
 R = X_{\max} - X_{\min}
-
+$$
 
 2. **Jangkauan Antarkuartil / Hamparan ($H$):**
    Selisih antara kuartil atas ($Q_3$) dengan kuartil bawah ($Q_1$):
 
-
-
+$$
 H = Q_3 - Q_1
-
+$$
 
 3. **Simpangan Kuartil / Jangkauan Semi-Interkuartil ($Q_d$):**
    Setengah dari nilai jangkauan antarkuartil:
 
-
-
+$$
 Q_d = \frac{1}{2} H = \frac{1}{2}(Q_3 - Q_1)
-
+$$
 
 ---
 
@@ -56,17 +53,15 @@ Simpangan rata-rata mengukur rata-rata jarak mutlak setiap data terhadap nilai r
 
 1. **Untuk Data Tunggal:**
 
-
-
+$$
 SR = \frac{\sum_{i=1}^n \lvert x_i - \bar{x} \rvert}{n}
-
+$$
 
 2. **Untuk Data Berkelompok (Tabel Distribusi Frekuensi):**
 
-
-
+$$
 SR = \frac{\sum_{i=1}^k f_i \lvert x_i - \bar{x} \rvert}{\sum_{i=1}^k f_i}
-
+$$
 
 ---
 
@@ -77,32 +72,28 @@ Varians adalah rata-rata kuadrat deviasi setiap data terhadap rata-rata hitungny
 1. **Untuk Data Tunggal:**
    - **Ragam / Varians ($S^2$):**
 
-
-
+$$
 S^2 = \frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n}
-
+$$
 
    - **Simpangan Baku ($S$):**
 
-
-
+$$
 S = \sqrt{S^2} = \sqrt{\frac{\sum_{i=1}^n (x_i - \bar{x})^2}{n}}
-
+$$
 
 2. **Untuk Data Berkelompok (Tabel Distribusi Frekuensi):**
    - **Ragam / Varians ($S^2$):**
 
-
-
+$$
 S^2 = \frac{\sum_{i=1}^k f_i (x_i - \bar{x})^2}{\sum_{i=1}^k f_i}
-
+$$
 
    - **Simpangan Baku ($S$):**
 
-
-
+$$
 S = \sqrt{S^2} = \sqrt{\frac{\sum_{i=1}^k f_i (x_i - \bar{x})^2}{\sum_{i=1}^k f_i}}
-
+$$
 
 **Keterangan Simbol:**
 - $n$: Banyaknya seluruh data ($\sum f_i$).
@@ -123,10 +114,9 @@ S = \sqrt{S^2} = \sqrt{\frac{\sum_{i=1}^k f_i (x_i - \bar{x})^2}{\sum_{i=1}^k f_
 #### B. Pengaruh Transformasi Linier Data Terhadap Ukuran Penyebaran
 Misalkan sekumpulan data awal $x_i$ memiliki jangkauan $R_x$, simpangan rata-rata $SR_x$, varians $S_x^2$, dan simpangan baku $S_x$. Jika setiap nilai data diubah melalui operasi linier:
 
-
-
+$$
 y_i = a x_i + b \quad (a, b \in \mathbb{R})
-
+$$
 
 Maka ukuran statistik yang baru berubah dengan aturan berikut:
 
@@ -148,9 +138,9 @@ Maka ukuran statistik yang baru berubah dengan aturan berikut:
 **Soal:**
 Diberikan data nilai ujian tasmi' Al-Qur'an dari $8$ orang santri sebagai berikut:
 
-
-
+$$
 4, \ 6, \ 6, \ 7, \ 8, \ 9, \ 10, \ 14
+$$
 
 Tentukan:
 a. Jangkauan ($R$), Jangkauan Antarkuartil ($H$), dan Simpangan Kuartil ($Q_d$).  
@@ -165,75 +155,63 @@ c. Ragam ($S^2$) dan Simpangan Baku ($S$).
 - **Langkah Penyelesaian:**
   1. *Menghitung Nilai Rata-rata ($\bar{x}$):*
 
-
-
+$$
 \bar{x} = \frac{4 + 6 + 6 + 7 + 8 + 9 + 10 + 14}{8} = \frac{64}{8} = 8
-
+$$
 
   2. *Menghitung $R, H,$ dan $Q_d$:*
-     - $X_{\max} = 14$ dan $X_{\min} = 4 \implies R = 14 - 4 = 10$.
-     - Letak kuartil untuk $n = 8$:
+   - $X_{\max} = 14$ dan $X_{\min} = 4 \implies R = 14 - 4 = 10$.
+   - Letak kuartil untuk $n = 8$:
        - Paruh bawah: $4, 6, 6, 7 \implies Q_1 = \frac{6 + 6}{2} = 6$.
        - Paruh atas: $8, 9, 10, 14 \implies Q_3 = \frac{9 + 10}{2} = 9{,}5$.
-     - Hamparan ($H$):
+   - Hamparan ($H$):
 
-
-
+$$
 H = Q_3 - Q_1 = 9{,}5 - 6 = 3{,}5
+$$
 
+   - Simpangan Kuartil ($Q_d$):
 
-     - Simpangan Kuartil ($Q_d$):
-
-
-
+$$
 Q_d = \frac{1}{2} H = \frac{1}{2}(3{,}5) = 1{,}75
-
+$$
 
   3. *Menghitung Simpangan Rata-rata ($SR$):*
-     Daftar nilai mutlak deviasi $\lvert x_i - \bar{x} \rvert$:
-     - $\lvert 4 - 8 \rvert = 4$
-     - $\lvert 6 - 8 \rvert = 2$
-     - $\lvert 6 - 8 \rvert = 2$
-     - $\lvert 7 - 8 \rvert = 1$
-     - $\lvert 8 - 8 \rvert = 0$
-     - $\lvert 9 - 8 \rvert = 1$
-     - $\lvert 10 - 8 \rvert = 2$
-     - $\lvert 14 - 8 \rvert = 6$
+   Daftar nilai mutlak deviasi $\lvert x_i - \bar{x} \rvert$:
+   - $\lvert 4 - 8 \rvert = 4$
+   - $\lvert 6 - 8 \rvert = 2$
+   - $\lvert 6 - 8 \rvert = 2$
+   - $\lvert 7 - 8 \rvert = 1$
+   - $\lvert 8 - 8 \rvert = 0$
+   - $\lvert 9 - 8 \rvert = 1$
+   - $\lvert 10 - 8 \rvert = 2$
+   - $\lvert 14 - 8 \rvert = 6$
 
-
-
-\sum_{i=1}^8 \lvert x_i - \bar{x} \rvert = 4 + 2 + 2 + 1 + 0 + 1 + 2 + 6 = 18
-
-
-
-
-SR = \frac{18}{8} = 2{,}25
-
+$$
+\begin{aligned}
+\sum_{i=1}^8 \lvert x_i - \bar{x} \rvert &= 4 + 2 + 2 + 1 + 0 + 1 + 2 + 6 = 18 \\
+SR &= \frac{18}{8} = 2{,}25
+\end{aligned}
+$$
 
   4. *Menghitung Ragam ($S^2$) dan Simpangan Baku ($S$):*
-     Kuadrat masing-masing deviasi $(x_i - \bar{x})^2$:
-     - $(4 - 8)^2 = 16$
-     - $(6 - 8)^2 = 4$
-     - $(6 - 8)^2 = 4$
-     - $(7 - 8)^2 = 1$
-     - $(8 - 8)^2 = 0$
-     - $(9 - 8)^2 = 1$
-     - $(10 - 8)^2 = 4$
-     - $(14 - 8)^2 = 36$
+   Kuadrat masing-masing deviasi $(x_i - \bar{x})^2$:
+   - $(4 - 8)^2 = 16$
+   - $(6 - 8)^2 = 4$
+   - $(6 - 8)^2 = 4$
+   - $(7 - 8)^2 = 1$
+   - $(8 - 8)^2 = 0$
+   - $(9 - 8)^2 = 1$
+   - $(10 - 8)^2 = 4$
+   - $(14 - 8)^2 = 36$
 
-
-
-\sum_{i=1}^8 (x_i - \bar{x})^2 = 16 + 4 + 4 + 1 + 0 + 1 + 4 + 36 = 66
-
-
-
-
-S^2 = \frac{66}{8} = 8{,}25
-
-
-
-
-S = \sqrt{8{,}25} = \sqrt{\frac{33}{4}} = \frac{\sqrt{33}}{2} \approx 2{,}87
+$$
+\begin{aligned}
+\sum_{i=1}^8 (x_i - \bar{x})^2 &= 16 + 4 + 4 + 1 + 0 + 1 + 4 + 36 = 66 \\
+S^2 &= \frac{66}{8} = 8{,}25 \\
+S &= \sqrt{8{,}25} = \sqrt{\frac{33}{4}} = \frac{\sqrt{33}}{2} \approx 2{,}87
+\end{aligned}
+$$
 
 - **Kesimpulan:** 
   $R = 10$, $H = 3{,}5$, $Q_d = 1{,}75$, $SR = 2{,}25$, $S^2 = 8{,}25$, dan $S = \frac{\sqrt{33}}{2} \approx 2{,}87$ ($\checkmark\ \text{Benar}$).
@@ -271,28 +249,24 @@ Hitunglah nilai Simpangan Rata-rata ($SR$), Ragam ($S^2$), dan Simpangan Baku ($
 
   2. *Hitung Nilai Rata-rata ($\bar{x}$):*
 
-
-
+$$
 \bar{x} = \frac{\sum f_i x_i}{\sum f_i} = \frac{220}{20} = 11\text{ menit}
-
+$$
 
   3. *Hitung Simpangan Rata-rata ($SR$):*
 
-
-
+$$
 SR = \frac{\sum f_i \lvert x_i - \bar{x} \rvert}{\sum f_i} = \frac{74}{20} = 3{,}7\text{ menit}
-
+$$
 
   4. *Hitung Ragam ($S^2$) dan Simpangan Baku ($S$):*
 
-
-
-S^2 = \frac{\sum f_i (x_i - \bar{x})^2}{\sum f_i} = \frac{370}{20} = 18{,}5
-
-
-
-
-S = \sqrt{18{,}5} = \sqrt{\frac{37}{2}} = \frac{\sqrt{74}}{2} \approx 4{,}30\text{ menit}
+$$
+\begin{aligned}
+S^2 &= \frac{\sum f_i (x_i - \bar{x})^2}{\sum f_i} = \frac{370}{20} = 18{,}5 \\
+S &= \sqrt{18{,}5} = \sqrt{\frac{37}{2}} = \frac{\sqrt{74}}{2} \approx 4{,}30\text{ menit}
+\end{aligned}
+$$
 
 - **Kesimpulan:** 
   Nilai $SR = 3{,}7\text{ menit}$, Ragam $S^2 = 18{,}5$, dan Simpangan Baku $S = \frac{\sqrt{74}}{2} \approx 4{,}30\text{ menit}$ ($\checkmark\ \text{Benar}$).
@@ -314,13 +288,13 @@ S = \sqrt{18{,}5} = \sqrt{\frac{37}{2}} = \frac{\sqrt{74}}{2} \approx 4{,}30\tex
 
 1. **Membandingkan Nilai Simpangan Baku:**
    - Diketahui: $\bar{x}_1 = \bar{x}_2 = 20\text{ juz}$.
-   - Simpangan baku: $S_1 = 1{,}5 < S_2 = 6{,}2$.
+   - Simpangan baku: $S_1 = 1{,}5 \lt S_2 = 6{,}2$.
 
 2. **Interpretasi Statistik:**
-   - **Tingkat Homogenitas**: Karena $S_1 < S_2$, maka persebaran data hafalan pada Halaqah Al-Fatih jauh lebih sempit di sekitar nilai rata-rata $20\text{ juz}$. Ini membuktikan bahwa Halaqah Al-Fatih **jauh lebih homogen dan konsisten**.
+   - **Tingkat Homogenitas**: Karena $S_1 \lt S_2$, maka persebaran data hafalan pada Halaqah Al-Fatih jauh lebih sempit di sekitar nilai rata-rata $20\text{ juz}$. Ini membuktikan bahwa Halaqah Al-Fatih **jauh lebih homogen dan konsisten**.
    - **Potret Kondisi Lapangan**:
-     - Pada **Halaqah Al-Fatih** ($S_1 = 1{,}5$), mayoritas santri berada pada rentang hafalan $20 \pm 1{,}5$, yaitu berkisar antara $18{,}5$ hingga $21{,}5\text{ juz}$. Kecepatan belajar antar-santri relatif seragam dan tidak ada yang tertinggal jauh.
-     - Pada **Halaqah An-Nur** ($S_2 = 6{,}2$), rentang sebaran hafalan melebar dari $20 \pm 6{,}2$, yaitu sekitar $13{,}8$ hingga $26{,}2\text{ juz}$. Hal ini mengindikasikan adanya kesenjangan (*gap*) yang lebar: sebagian santri sudah melesat mendekati khatam ($30\text{ juz}$), namun ada sebagian santri lain yang masih tertinggal di bawah $14\text{ juz}$.
+   - Pada **Halaqah Al-Fatih** ($S_1 = 1{,}5$), mayoritas santri berada pada rentang hafalan $20 \pm 1{,}5$, yaitu berkisar antara $18{,}5$ hingga $21{,}5\text{ juz}$. Kecepatan belajar antar-santri relatif seragam dan tidak ada yang tertinggal jauh.
+   - Pada **Halaqah An-Nur** ($S_2 = 6{,}2$), rentang sebaran hafalan melebar dari $20 \pm 6{,}2$, yaitu sekitar $13{,}8$ hingga $26{,}2\text{ juz}$. Hal ini mengindikasikan adanya kesenjangan (*gap*) yang lebar: sebagian santri sudah melesat mendekati khatam ($30\text{ juz}$), namun ada sebagian santri lain yang masih tertinggal di bawah $14\text{ juz}$.
 
 3. **Rekomendasi Kebijakan Pesantren:**
    Pengasuh asrama perlu memberikan pendampingan khusus (*mentoring*) bagi santri yang tertinggal di Halaqah An-Nur, sedangkan Halaqah Al-Fatih dapat mempertahankan metode belajarnya yang sudah solid dan merata.
@@ -331,10 +305,13 @@ S = \sqrt{18{,}5} = \sqrt{\frac{37}{2}} = \frac{\sqrt{74}}{2} \approx 4{,}30\tex
 
 - **Alur Kerja Menghitung Simpangan Baku Data Berkelompok:**
 
-
-
-\text{Titik Tengah } (x_i) \longrightarrow \bar{x} \longrightarrow \text{Deviasi } (x_i - \bar{x}) \longrightarrow \text{Kuadrat } (x_i - \bar{x})^2 \longrightarrow \text{Kalikan } f_i \longrightarrow \text{Bagi } \sum f_i \longrightarrow \text{Tarik Akar } (S)
-
+> 1. Tentukan **Titik Tengah** ($x_i$) kelas interval.
+> 2. Hitung **Mean** ($\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$).
+> 3. Hitung **Deviasi** ($x_i - \bar{x}$).
+> 4. **Kuadratkan** deviasi ($(x_i - \bar{x})^2$).
+> 5. **Kalikan** dengan frekuensi ($f_i (x_i - \bar{x})^2$).
+> 6. Bagi dengan total frekuensi untuk mendapatkan **Ragam** ($S^2$).
+> 7. **Tarik akar** untuk mendapatkan **Simpangan Baku** ($S = \sqrt{S^2}$).
 
 - **Jembatan Keledai Efek Transformasi Data ($y = ax + b$):**
   > *"Pusat kena semua ($a$ dan $b$), Sebaran hanya kena kali ($\lvert a \rvert$), Geser ($b$) dicuekin!"*
@@ -565,10 +542,9 @@ Tentukan simpangan rata-rata dan simpangan baku nilai tes pendaftar santri baru!
 
 1. Tentukan nilai Jangkauan ($R$), Jangkauan Antarkuartil ($H$), Simpangan Kuartil ($Q_d$), Simpangan Rata-rata ($SR$), Ragam ($S^2$), dan Simpangan Baku ($S$) dari data nilai ujian fiqih santri berikut:
 
-
-
+$$
 6, \ 7, \ 8, \ 8, \ 9, \ 10, \ 12, \ 12
-
+$$
 
 2. Diberikan tabel distribusi frekuensi nilai ujian tajwid santri:
 

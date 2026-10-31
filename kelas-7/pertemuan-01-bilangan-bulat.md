@@ -1,4 +1,4 @@
-﻿# BILANGAN BULAT
+# BILANGAN BULAT
 ## Pertemuan 1: Konsep Bilangan Bulat dan Sifat Operasi Hitung
 
 ---
@@ -7,7 +7,9 @@
 
 Bilangan bulat adalah himpunan bilangan yang terdiri atas bilangan bulat positif (bilangan asli), bilangan nol ($0$), dan bilangan bulat negatif. Himpunan bilangan bulat dilambangkan secara matematis dengan huruf $\mathbb{Z}$ (dari bahasa Jerman *Zahlen*):
 
-\mathbb{Z} = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}
+$$
+\mathbb{Z} = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots}
+$$
 
 Pada garis bilangan horizontal:
 - Bilangan di sebelah kanan nol bernilai **positif** ($\mathbb{Z}^+ = \{1, 2, 3, \dots\}$).
@@ -37,44 +39,62 @@ Operasi hitung pada bilangan bulat mencakup penjumlahan, pengurangan, perkalian,
 1. **Sifat Komutatif (Pertukaran):**
    - Penjumlahan: 
 
+$$
 a + b = b + a
+$$
 
    - Perkalian: 
 
+$$
 a \times b = b \times a
+$$
 
    *(Catatan: Pengurangan dan pembagian **tidak** bersifat komutatif: $a - b \neq b - a$ dan $a \div b \neq b \div a$)*
 
 2. **Sifat Asosiatif (Pengelompokan):**
    - Penjumlahan: 
 
+$$
 (a + b) + c = a + (b + c)
+$$
 
    - Perkalian: 
 
+$$
 (a \times b) \times c = a \times (b \times c)
+$$
 
 3. **Sifat Distributif (Penyebaran Perkalian):**
    - Terhadap Penjumlahan: 
 
+$$
 a \times (b + c) = (a \times b) + (a \times c)
+$$
 
    - Terhadap Pengurangan: 
 
+$$
 a \times (b - c) = (a \times b) - (a \times c)
+$$
 
 4. **Unsur Identitas & Invers:**
    - Unsur identitas penjumlahan adalah $0$: 
 
+$$
 a + 0 = 0 + a = a
+$$
 
    - Invers penjumlahan (lawan bilangan): 
 
+$$
 a + (-a) = 0
+$$
 
    - Unsur identitas perkalian adalah $1$: 
 
+$$
 a \times 1 = 1 \times a = a
+$$
 
 #### B. Urutan Kekuatan Operasi Hitung (Hierarki Kabataku)
 
@@ -97,9 +117,13 @@ Beberapa aturan mutlak operasi tanda pada bilangan bulat:
 1. **Aturan Pengurangan Bilangan Bulat:**
    Mengurangkan suatu bilangan sama artinya dengan menjumlahkan bilangan tersebut dengan lawannya:
 
+$$
 a - b = a + (-b)
+$$
 
+$$
 a - (-b) = a + b
+$$
 
 2. **Aturan Tanda pada Perkalian dan Pembagian:**
    - Perkalian/pembagian dua bilangan bertanda sama menghasilkan bilangan **positif**.
@@ -129,7 +153,9 @@ a - (-b) = a + b
 **Soal:**
 Tentukan hasil dari operasi hitung penjumlahan dan pengurangan bilangan bulat berikut:
 
+$$
 -18 + (-12) - (-25)
+$$
 
 **Penyelesaian:**
 - **Diketahui:**
@@ -139,15 +165,21 @@ Tentukan hasil dari operasi hitung penjumlahan dan pengurangan bilangan bulat be
 - **Langkah Penyelesaian:**
   1. Ubah operasi pengurangan dengan bilangan negatif menjadi penjumlahan dengan lawannya:
 
+$$
 -18 + (-12) - (-25) = -18 + (-12) + 25
+$$
 
   2. Kerjakan penjumlahan berurutan dari kiri:
 
+$$
 -18 + (-12) = -(18 + 12) = -30
+$$
 
   3. Lanjutkan penjumlahan dengan bilangan berikutnya:
 
+$$
 -30 + 25 = -(30 - 25) = -5
+$$
 
 - **Kesimpulan:** 
   Jadi, hasil akhir dari $-18 + (-12) - (-25)$ adalah $-5$ ($\checkmark\ \text{Benar}$)
@@ -158,7 +190,9 @@ Tentukan hasil dari operasi hitung penjumlahan dan pengurangan bilangan bulat be
 **Soal:**
 Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 
+$$
 45 - (-24) \div (-6) + 7 \times (-4)
+$$
 
 **Penyelesaian:**
 - **Diketahui:**
@@ -169,24 +203,34 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
   1. Selesaikan operasi pembagian dan perkalian terlebih dahulu (aturan Kabataku):
      - Pembagian: 
 
+$$
 (-24) \div (-6) = +4
+$$
 
      - Perkalian: 
 
+$$
 7 \times (-4) = -28
+$$
 
   2. Masukkan hasil pembagian dan perkalian ke dalam urutan operasi:
 
+$$
 45 - 4 + (-28)
+$$
 
   3. Selesaikan operasi pengurangan dan penjumlahan secara berurutan dari kiri ke kanan:
      - Pengurangan:
 
+$$
 45 - 4 = 41
+$$
 
      - Penjumlahan dengan bilangan negatif:
 
+$$
 41 + (-28) = 41 - 28 = 13
+$$
 
 - **Kesimpulan:** 
   Jadi, hasil akhir dari $45 - (-24) \div (-6) + 7 \times (-4)$ adalah $13$ ($\checkmark\ \text{Benar}$)
@@ -211,17 +255,21 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
    - Soal dijawab salah = $5$ butir soal (setiap soal bernilai $-2$)
    - Soal tidak dijawab:
 
+$$
 30 - (22 + 5) = 30 - 27 = 3\text{ butir soal}\quad (\text{setiap soal bernilai } -1)
+$$
 
 2. **Perhitungan Total Skor:**
 
+$$
 \begin{aligned}
-   \text{Total Skor} &= (22 \times 4) + (5 \times (-2)) + (3 \times (-1)) \\
-   &= 88 + (-10) + (-3) \\
-   &= 88 - 10 - 3 \\
-   &= 78 - 3 \\
-   &= 75
-   \end{aligned}
+\text{Total Skor} &= (22 \times 4) + (5 \times (-2)) + (3 \times (-1)) \\
+&= 88 + (-10) + (-3) \\
+&= 88 - 10 - 3 \\
+&= 78 - 3 \\
+&= 75
+\end{aligned}
+$$
 
 3. **Jawaban Kontekstual:**
    Jadi, total skor akhir yang diperoleh regu santri Pondok Pesantren Al-Hikmah adalah $75$ poin.
@@ -238,7 +286,9 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 - **Pola Tanda Minus Bertemu Minus:**
   *Dua tanda minus yang berurutan langsung berubah menjadi tanda positif (tambah):*
 
+$$
 -(-x) \longrightarrow +x
+$$
 
 - **Pola Perkalian/Pembagian Dua Tanda:**
   - Tanda **sama** $\longrightarrow$ hasil **positif** ($+ \times + = +$ dan $- \times - = +$)
@@ -249,7 +299,9 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
   - ⚠️ *Urutan pengerjaan perkalian dan pembagian setara:* Kerjakan runtut dari kiri ke kanan. Misalnya pada $36 \div 6 \times 2$, selesaikan pembagian terlebih dahulu: $(36 \div 6) \times 2 = 6 \times 2 = 12$, bukan $36 \div (6 \times 2) = 36 \div 12 = 3$.
   - ⚠️ *Pengurangan berurutan harus diselesaikan dari kiri ke kanan:*
 
+$$
 20 - 8 - 3 = (20 - 8) - 3 = 12 - 3 = 9
+$$
 
     *(Bukan $20 - (8 - 3) = 20 - 5 = 15$, ini kesalahan fatal).*
 
@@ -265,11 +317,15 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 1. Sebuah kapal selam beroperasi pada kedalaman $120\text{ m}$ di bawah permukaan air laut. Tuliskan lambang bilangan bulat yang sesuai untuk posisi kapal selam tersebut!
 2. Sisipkan tanda perbandingan yang tepat ($<$, $>$, atau $=$) pada pernyataan berikut:  
 
+$$
 -18 \ \dots \ -11
+$$
 
 3. Urutkan himpunan bilangan bulat berikut dari nilai yang terkecil hingga terbesar:  
 
+$$
 -15,\ 9,\ -30,\ 0,\ 17,\ -4,\ -21
+$$
 
 4. Tentukan lawan bilangan (invers aditif) dan nilai mutlak dari bilangan $-58$!
 
@@ -289,11 +345,15 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 **C. Sifat Hitung & Penerapan Kontekstual**
 15. Hitunglah secara cepat dengan menggunakan sifat komutatif dan asosiatif:  
 
+$$
 (-25) \times 49 \times 4
+$$
 
 16. Hitunglah secara efisien dengan menggunakan sifat distributif:  
 
+$$
 34 \times 28 + 34 \times 72
+$$
 
 17. Suhu mula-mula di sebuah kota pegunungan pada pagi hari adalah $-6^\circ\text{C}$. Menjelang siang, suhu naik sebesar $14^\circ\text{C}$. Pada malam hari, suhu turun kembali sebesar $9^\circ\text{C}$. Berapakah suhu udara kota tersebut pada malam hari?
 18. Seekor burung terbang pada ketinggian $25\text{ m}$ di atas permukaan laut, sedangkan seekor ikan berenang tepat di bawahnya pada kedalaman $18\text{ m}$ di bawah permukaan laut. Berapakah jarak vertikal antara burung dan ikan tersebut?
@@ -308,11 +368,15 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 1. Seorang penyelam mutiara berada pada kedalaman $45\text{ m}$ di bawah permukaan air laut. Tuliskan lambang bilangan bulat yang sesuai untuk posisi penyelam tersebut!
 2. Sisipkan tanda perbandingan yang tepat ($<$, $>$, atau $=$) pada pernyataan berikut:  
 
+$$
 -29 \ \dots \ -35
+$$
 
 3. Urutkan himpunan bilangan bulat berikut dari nilai yang terbesar hingga terkecil:  
 
+$$
 42,\ -50,\ -18,\ 65,\ -7,\ 24,\ -1
+$$
 
 4. Tentukan lawan bilangan (invers aditif) dan nilai mutlak dari bilangan $-49$!
 
@@ -332,11 +396,15 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 **C. Sifat Hitung & Penerapan Kontekstual**
 15. Hitunglah secara cepat dengan menggunakan sifat komutatif dan asosiatif:  
 
+$$
 (-125) \times (-38) \times (-8)
+$$
 
 16. Hitunglah secara efisien dengan menggunakan sifat distributif:  
 
+$$
 46 \times 87 - 46 \times 37
+$$
 
 17. Sebongkah daging beku bersuhu $-15^\circ\text{C}$ dikeluarkan dari ruang pendingin dapur santri. Saat dimasak di atas wajan, suhunya naik rata-rata $4^\circ\text{C}$ setiap $3\text{ menit}$. Berapakah suhu daging tersebut setelah dimasak selama $18\text{ menit}$?
 18. Sebuah lift di gedung asrama santri mula-mula berada di lantai $9$. Lift tersebut bergerak turun sejauh $12$ lantai ke lantai bawah tanah (*basement*), kemudian bergerak naik lagi sejauh $5$ lantai. Pada lantai berapakah lift tersebut berhenti sekarang?
@@ -353,11 +421,15 @@ Hitunglah nilai dari ekspresi operasi hitung campuran berikut:
 
 1. Tentukan hasil perhitungan dari operasi campuran berikut:
 
+$$
 [(-36) + 12] \div (-8) - (-5) \times 7
+$$
 
 2. Hitunglah hasil dari operasi hitung campuran berikut:
 
+$$
 (-14) \times 5 - (-64) \div 8 + (-27)
+$$
 
 3. **Soal Kontekstual Aktivitas Pondok:**  
    Toko Kitab Pesantren mendatangkan $12$ kardus kitab nahwu dengan biaya pengadaan $\text{Rp}150.000$ per kardus. Pada pekan pertama, tersalurkan kepada para santri sebanyak $8$ kardus dengan infak pengganti $\text{Rp}180.000$ per kardus. Pada pekan kedua, sisa $4$ kardus disalurkan dengan infak subsidi $\text{Rp}135.000$ per kardus karena sebagian sampul kardus basah terkena tempias air hujan.  

@@ -107,3 +107,4 @@ Setiap modul baru yang ditambahkan ke repositori ini wajib mematuhi standar oper
 - Kelas 7 Pertemuan 1: [Operasi Hitung Bilangan Bulat](file:///d:/Project/exercise/math/kelas-7/pertemuan-01-bilangan-bulat.md)
 - Kelas 11 Pertemuan 7: [Determinan dan Invers Matriks](file:///d:/Project/exercise/math/kelas-11/pertemuan-07-determinan-dan-invers-matriks.md)
 - Kelas 12 Pertemuan 8: [Ukuran Penyebaran Data](file:///d:/Project/exercise/math/kelas-12/pertemuan-08-ukuran-penyebaran-data.md)
+- Kelas 12 Pertemuan 9: [Latihan & Aplikasi Statistika Deskriptif Terpadu](file:///d:/Project/exercise/math/kelas-12/pertemuan-09-latihan-dan-aplikasi-statistika.md)

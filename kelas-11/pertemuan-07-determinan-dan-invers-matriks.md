@@ -1,4 +1,4 @@
-﻿# MATEMATIKA SMA (JURUSAN IPA & PESANTREN)
+# MATEMATIKA SMA (JURUSAN IPA & PESANTREN)
 ## Kelas 11 - Semester Ganjil
 ### Pertemuan 7: Determinan dan Invers Matriks
 
@@ -14,7 +14,9 @@ Secara filosofis dan teologis, keberadaan determinan dan invers matriks mengajar
 - Jika matriks $A$ diibaratkan sebagai proses penguncian (enkripsi pesan logistik santri), maka **invers matriks** $A^{-1}$ adalah anak kunci pembukanya.
 - Mengalikan suatu matriks dengan inversnya akan mengembalikan keadaan ke elemen netral (matriks identitas $I$):
 
+$$
 A \cdot A^{-1} = A^{-1} \cdot A = I
+$$
 
 - Namun, tidak semua gembok memiliki anak kunci. Matriks yang nilai determinannya bernilai nol ($\det A = 0$) disebut **matriks singular** (rusak/kehilangan dimensi), sehingga **mustahil memiliki invers**. Matriks yang memiliki invers hanyalah matriks dengan determinan tidak sama dengan nol ($\det A \neq 0$), yang dinamakan **matriks non-singular**.
 - Selain itu, determinan dapat dimanfaatkan secara langsung untuk menyelesaikan **Sistem Persamaan Linear Dua Variabel (SPLDV)** secara cepat tanpa perlu mencari invers matriks, yang dikenal dengan nama **Aturan Cramer (*Cramer's Rule*)**.
@@ -27,15 +29,21 @@ A \cdot A^{-1} = A^{-1} \cdot A = I
 
 Diberikan matriks persegi berordo $2 \times 2$:
 
+$$
 A = \begin{pmatrix} a & b \\ c & d \end{pmatrix}
+$$
 
 1. **Determinan Matriks $2 \times 2$:**
 
+$$
 \det(A) = |A| = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
+$$
 
 2. **Invers Matriks $2 \times 2$:**
 
+$$
 A^{-1} = \frac{1}{\det(A)} \operatorname{Adj}(A) = \frac{1}{ad - bc} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}, \quad \text{dengan syarat } ad - bc \neq 0
+$$
 
 **Keterangan Simbol:**
 - $\det(A)$ atau $|A|$: Determinan dari matriks $A$ (skalar bilangan real).
@@ -49,15 +57,21 @@ A^{-1} = \frac{1}{\det(A)} \operatorname{Adj}(A) = \frac{1}{ad - bc} \begin{pmat
 
 Diberikan matriks persegi berordo $3 \times 3$:
 
+$$
 A = \begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix}
+$$
 
 Nilai determinan dihitung dengan menyalin dua kolom pertama ke sebelah kanan garis determinan:
 
+$$
 \det(A) = \begin{vmatrix} a & b & c \\ d & e & f \\ g & h & i \end{vmatrix} \begin{matrix} a & b \\ d & e \\ g & h \end{matrix}
+$$
 
 Perhitungan dilakukan dengan menjumlahkan hasil kali diagonal utama lalu mengurangkannya dengan hasil kali diagonal samping:
 
+$$
 \det(A) = (aei + bfg + cdh) - (ceg + afh + bdi)
+$$
 
 ---
 
@@ -65,15 +79,21 @@ Perhitungan dilakukan dengan menjumlahkan hasil kali diagonal utama lalu mengura
 
 Untuk matriks ordo $3 \times 3$, invers dirumuskan sebagai:
 
+$$
 A^{-1} = \frac{1}{\det(A)} \operatorname{Adj}(A), \quad \text{dengan syarat } \det(A) \neq 0
+$$
 
 Di mana matriks Adjoin merupakan **transpos dari matriks kofaktor**:
 
+$$
 \operatorname{Adj}(A) = (\operatorname{Kof}(A))^T = \begin{pmatrix} C_{11} & C_{21} & C_{31} \\ C_{12} & C_{22} & C_{32} \\ C_{13} & C_{23} & C_{33} \end{pmatrix}
+$$
 
 Kofaktor $C_{ij}$ didefinisikan melalui minor $M_{ij}$ (determinan submatriks setelah menghapus baris ke-$i$ dan kolom ke-$j$):
 
+$$
 C_{ij} = (-1)^{i+j} M_{ij}
+$$
 
 ---
 
@@ -81,24 +101,34 @@ C_{ij} = (-1)^{i+j} M_{ij}
 
 Sistem Persamaan Linear Dua Variabel (SPLDV):
 
+$$
 \begin{cases} a_1 x + b_1 y = c_1 \\ a_2 x + b_2 y = c_2 \end{cases}
+$$
 
 Dapat diselesaikan secara langsung menggunakan tiga nilai determinan:
 1. **Determinan Utama ($D$)**: Determinan dari matriks koefisien variabel $x$ dan $y$:
 
+$$
 D = \begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix} = a_1 b_2 - a_2 b_1
+$$
 
 2. **Determinan Variabel $x$ ($D_x$)**: Kolom koefisien $x$ diganti oleh kolom konstanta ($c_1, c_2$):
 
+$$
 D_x = \begin{vmatrix} c_1 & b_1 \\ c_2 & b_2 \end{vmatrix} = c_1 b_2 - c_2 b_1
+$$
 
 3. **Determinan Variabel $y$ ($D_y$)**: Kolom koefisien $y$ diganti oleh kolom konstanta ($c_1, c_2$):
 
+$$
 D_y = \begin{vmatrix} a_1 & c_1 \\ a_2 & c_2 \end{vmatrix} = a_1 c_2 - a_2 c_1
+$$
 
 Nilai variabel $x$ dan $y$ diperoleh secara instan tanpa perlu mencari invers matriks:
 
+$$
 x = \frac{D_x}{D} \quad \text{dan} \quad y = \frac{D_y}{D}, \quad \text{dengan syarat } D \neq 0
+$$
 
 ---
 
@@ -147,28 +177,36 @@ c. Buktikan secara aljabar bahwa $A \cdot A^{-1} = I$.
 **Penyelesaian:**
 - **Diketahui:**
 
+$$
 A = \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \implies a = 3, \ b = 5, \ c = 1, \ d = 2
+$$
 
 - **Ditanyakan:**
   $\det(A)$, $A^{-1}$, dan pembuktian $A \cdot A^{-1} = I$.
 - **Langkah Penyelesaian:**
   1. *Menghitung Determinan:*
 
+$$
 \det(A) = ad - bc = (3)(2) - (5)(1) = 6 - 5 = 1
+$$
 
-     Karena $\det(A) = 1 \neq 0$, matriks $A$ bersifat non-singular dan memiliki invers.
+  Karena $\det(A) = 1 \neq 0$, matriks $A$ bersifat non-singular dan memiliki invers.
   2. *Menentukan Invers Matriks:*
 
+$$
 A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \frac{1}{1} \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix} = \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix}
+$$
 
   3. *Pembuktian Perkalian Matriks:*
 
+$$
 \begin{aligned}
-     A \cdot A^{-1} &= \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix} \\
-     &= \begin{pmatrix} (3)(2) + (5)(-1) & (3)(-5) + (5)(3) \\ (1)(2) + (2)(-1) & (1)(-5) + (2)(3) \end{pmatrix} \\
-     &= \begin{pmatrix} 6 - 5 & -15 + 15 \\ 2 - 2 & -5 + 6 \end{pmatrix} \\
-     &= \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I
-     \end{aligned}
+A \cdot A^{-1} &= \begin{pmatrix} 3 & 5 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix} \\
+&= \begin{pmatrix} (3)(2) + (5)(-1) & (3)(-5) + (5)(3) \\ (1)(2) + (2)(-1) & (1)(-5) + (2)(3) \end{pmatrix} \\
+&= \begin{pmatrix} 6 - 5 & -15 + 15 \\ 2 - 2 & -5 + 6 \end{pmatrix} \\
+&= \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I
+\end{aligned}
+$$
 
 - **Kesimpulan:** 
   Nilai $\det(A) = 1$, invers $A^{-1} = \begin{pmatrix} 2 & -5 \\ -1 & 3 \end{pmatrix}$, dan terbukti $A \cdot A^{-1} = I$ ($\checkmark\ \text{Benar}$).
@@ -183,27 +221,33 @@ A^{-1} = \frac{1}{\det(A)} \begin{pmatrix} d & -b \\ -c & a \end{pmatrix} = \fra
 **Penyelesaian:**
 - **Diketahui:**
 
+$$
 B = \begin{pmatrix} 2 & 1 & 3 \\ 0 & 4 & 2 \\ 1 & 2 & 1 \end{pmatrix}, \quad M = \begin{pmatrix} 2k & 6 \\ 3 & 9 \end{pmatrix}
+$$
 
 - **Ditanyakan:**
   $\det(B)$ dan nilai $k$ saat $\det(M) = 0$.
 - **Langkah Penyelesaian:**
   1. *Menghitung Determinan Matriks $B$ dengan Aturan Sarrus:*
 
+$$
 \det(B) = \begin{vmatrix} 2 & 1 & 3 \\ 0 & 4 & 2 \\ 1 & 2 & 1 \end{vmatrix} \begin{matrix} 2 & 1 \\ 0 & 4 \\ 1 & 2 \end{matrix}
+$$
 
+$$
 \begin{aligned}
-     \det(B) &= [(2 \cdot 4 \cdot 1) + (1 \cdot 2 \cdot 1) + (3 \cdot 0 \cdot 2)] - [(3 \cdot 4 \cdot 1) + (2 \cdot 2 \cdot 2) + (1 \cdot 0 \cdot 1)] \\
-     &= [8 + 2 + 0] - [12 + 8 + 0] \\
-     &= 10 - 20 = -10
-     \end{aligned}
+\det(B) &= [(2 \cdot 4 \cdot 1) + (1 \cdot 2 \cdot 1) + (3 \cdot 0 \cdot 2)] - [(3 \cdot 4 \cdot 1) + (2 \cdot 2 \cdot 2) + (1 \cdot 0 \cdot 1)] \\
+&= [8 + 2 + 0] - [12 + 8 + 0] \\
+&= 10 - 20 = -10
+\end{aligned}
+$$
 
   2. *Menentukan Nilai $k$ pada Matriks Singular:*
-     Syarat matriks singular: $\det(M) = 0$.
+  Syarat matriks singular: $\det(M) = 0$.
 
-(2k)(9) - (6)(3) = 0
-
-18k - 18 = 0 \implies 18k = 18 \implies k = 1
+$$
+(2k)(9) - (6)(3) = 0 \implies 18k - 18 = 0 \implies 18k = 18 \implies k = 1
+$$
 
 - **Kesimpulan:** 
   Nilai determinan matriks $B$ adalah $-10$, dan matriks $M$ menjadi singular ketika $k = 1$ ($\checkmark\ \text{Benar}$).
@@ -214,35 +258,46 @@ B = \begin{pmatrix} 2 & 1 & 3 \\ 0 & 4 & 2 \\ 1 & 2 & 1 \end{pmatrix}, \quad M =
 **Soal:**
 Tentukan himpunan penyelesaian dari sistem persamaan linear berikut menggunakan metode determinan saja:
 
+$$
 \begin{cases} 3x + 2y = 12 \\ 5x - y = 7 \end{cases}
+$$
 
 **Penyelesaian:**
 - **Diketahui:**
 
-a_1 = 3, \ b_1 = 2, \ c_1 = 12
-
-a_2 = 5, \ b_2 = -1, \ c_2 = 7
+$$
+\begin{aligned}
+a_1 = 3, \quad b_1 = 2, \quad c_1 = 12 \\
+a_2 = 5, \quad b_2 = -1, \quad c_2 = 7
+\end{aligned}
+$$
 
 - **Ditanyakan:**
   Nilai $x$ dan $y$ menggunakan Aturan Cramer.
 - **Langkah Penyelesaian:**
   1. *Hitung Determinan Utama ($D$):*
 
+$$
 D = \begin{vmatrix} 3 & 2 \\ 5 & -1 \end{vmatrix} = (3)(-1) - (2)(5) = -3 - 10 = -13
+$$
 
   2. *Hitung Determinan Variabel $x$ ($D_x$):*
 
+$$
 D_x = \begin{vmatrix} 12 & 2 \\ 7 & -1 \end{vmatrix} = (12)(-1) - (2)(7) = -12 - 14 = -26
+$$
 
   3. *Hitung Determinan Variabel $y$ ($D_y$):*
 
+$$
 D_y = \begin{vmatrix} 3 & 12 \\ 5 & 7 \end{vmatrix} = (3)(7) - (12)(5) = 21 - 60 = -39
+$$
 
   4. *Menentukan Nilai Variabel:*
 
-x = \frac{D_x}{D} = \frac{-26}{-13} = 2
-
-y = \frac{D_y}{D} = \frac{-39}{-13} = 3
+$$
+x = \frac{D_x}{D} = \frac{-26}{-13} = 2, \quad y = \frac{D_y}{D} = \frac{-39}{-13} = 3
+$$
 
 - **Kesimpulan:** 
   Himpunan penyelesaian dari sistem persamaan tersebut adalah $(x, y) = (2, 3)$ ($\checkmark\ \text{Benar}$).
@@ -265,38 +320,50 @@ y = \frac{D_y}{D} = \frac{-39}{-13} = 3
    - $x$ = harga $1\text{ karung}$ beras (dalam rupiah)
    - $y$ = harga $1\text{ kardus}$ kurma (dalam rupiah)
 
+$$
 \begin{cases} 2x + 3y = 420.000 \\ 3x + 4y = 590.000 \end{cases}
+$$
 
 2. **Penyelesaian dengan Metode Determinan Saja (Aturan Cramer):**
    - *Determinan Utama ($D$):*
 
+$$
 D = \begin{vmatrix} 2 & 3 \\ 3 & 4 \end{vmatrix} = (2)(4) - (3)(3) = 8 - 9 = -1
+$$
 
    - *Determinan Variabel $x$ ($D_x$):*
 
+$$
 \begin{aligned}
-     D_x = \begin{vmatrix} 420.000 & 3 \\ 590.000 & 4 \end{vmatrix} &= (420.000)(4) - (3)(590.000) \\
-     &= 1.680.000 - 1.770.000 = -90.000
-     \end{aligned}
+D_x = \begin{vmatrix} 420.000 & 3 \\ 590.000 & 4 \end{vmatrix} &= (420.000)(4) - (3)(590.000) \\
+&= 1.680.000 - 1.770.000 = -90.000
+\end{aligned}
+$$
 
    - *Determinan Variabel $y$ ($D_y$):*
 
+$$
 \begin{aligned}
-     D_y = \begin{vmatrix} 2 & 420.000 \\ 3 & 590.000 \end{vmatrix} &= (2)(590.000) - (420.000)(3) \\
-     &= 1.180.000 - 1.260.000 = -80.000
-     \end{aligned}
+D_y = \begin{vmatrix} 2 & 420.000 \\ 3 & 590.000 \end{vmatrix} &= (2)(590.000) - (420.000)(3) \\
+&= 1.180.000 - 1.260.000 = -80.000
+\end{aligned}
+$$
 
    - *Menghitung Nilai Satuan:*
 
-x = \frac{D_x}{D} = \frac{-90.000}{-1} = 90.000
-
-y = \frac{D_y}{D} = \frac{-80.000}{-1} = 80.000
+$$
+x = \frac{D_x}{D} = \frac{-90.000}{-1} = 90.000, \quad y = \frac{D_y}{D} = \frac{-80.000}{-1} = 80.000
+$$
 
 3. **Perbandingan dengan Metode Invers Matriks ($X = A^{-1} \cdot B$):**
 
+$$
 A^{-1} = \frac{1}{-1} \begin{pmatrix} 4 & -3 \\ -3 & 2 \end{pmatrix} = \begin{pmatrix} -4 & 3 \\ 3 & -2 \end{pmatrix}
+$$
 
+$$
 \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} -4 & 3 \\ 3 & -2 \end{pmatrix} \begin{pmatrix} 420.000 \\ 590.000 \end{pmatrix} = \begin{pmatrix} 90.000 \\ 80.000 \end{pmatrix}
+$$
 
 4. **Jawaban Kontekstual:**
    Kedua metode menghasilkan nilai yang konsisten dan presisi:
@@ -310,12 +377,16 @@ A^{-1} = \frac{1}{-1} \begin{pmatrix} 4 & -3 \\ -3 & 2 \end{pmatrix} = \begin{pm
 - **Jembatan Keledai Invers $2 \times 2$:**
   > *"Tukar posisi diagonal utama, balikkan tanda diagonal samping, lalu bagi seluruhnya dengan determinan."*
 
+$$
 \begin{pmatrix} \mathbf{a} & b \\ c & \mathbf{d} \end{pmatrix} \xrightarrow{\text{Adjoin}} \begin{pmatrix} \mathbf{d} & -b \\ -c & \mathbf{a} \end{pmatrix}
+$$
 
 - **Jembatan Keledai Aturan Cramer:**
   > *"Ganti kolom variabel yang dicari dengan kolom konstanta, lalu bagi dengan determinan utama."*
 
+$$
 x = \frac{D_x}{D}, \quad y = \frac{D_y}{D}
+$$
 
 - **Catatan Waspada (Common Pitfalls):**
   - ⚠️ **Lupa Memeriksa Nilai $D$**: Jika $D = 0$, Aturan Cramer tidak dapat membagi nilai. Jangan lanjutkan pembagian dan periksa apakah sistem memiliki tak hingga banyak solusi atau tidak memiliki solusi sama sekali.
@@ -433,47 +504,47 @@ x = \frac{D_x}{D}, \quad y = \frac{D_y}{D}
 10. Pengurus kamar santri membeli perlengkapan tidur dan salat:
     - Pembelian I: $2\text{ lembar}$ sajadah busa dan $3\text{ buah}$ bantal tidur seharga $\text{Rp}230.000$.
     - Pembelian II: $4\text{ lembar}$ sajadah busa dan $1\text{ buah}$ bantal tidur seharga $\text{Rp}310.000$.  
-    Tentukan harga $1\text{ lembar}$ sajadah busa dan $1\text{ buah}$ bantal tidur!
+    - Tentukan harga $1\text{ lembar}$ sajadah busa dan $1\text{ buah}$ bantal tidur!
 11. Bagian pengajaran kelas tahfiz membeli alat tulis guru:
     - Pembelian I: $5\text{ kotak}$ spidol papan tulis dan $3\text{ buah}$ penghapus magnet seharga $\text{Rp}135.000$.
     - Pembelian II: $3\text{ kotak}$ spidol papan tulis dan $4\text{ buah}$ penghapus magnet seharga $\text{Rp}103.000$.  
-    Tentukan harga $1\text{ kotak}$ spidol dan $1\text{ buah}$ penghapus!
+    - Tentukan harga $1\text{ kotak}$ spidol dan $1\text{ buah}$ penghapus!
 12. Toko Kitab Pesantren menjual mushaf Al-Qur'an dan buku tajwid:
     - Paket Barokah: $4\text{ mushaf}$ Al-Qur'an dan $5\text{ buku}$ kaidah tajwid praktis seharga $\text{Rp}325.000$.
     - Paket Hidayah: $2\text{ mushaf}$ Al-Qur'an dan $3\text{ buku}$ kaidah tajwid praktis seharga $\text{Rp}175.000$.  
-    Tentukan harga $1\text{ mushaf}$ Al-Qur'an dan $1\text{ buku}$ kaidah tajwid!
+    - Tentukan harga $1\text{ mushaf}$ Al-Qur'an dan $1\text{ buku}$ kaidah tajwid!
 13. Santri bagian rumah tangga asrama membeli perlengkapan minum santri:
     - Pembelian I: $2\text{ unit}$ dispenser air galon dan $3\text{ buah}$ teko air stainless seharga $\text{Rp}380.000$.
     - Pembelian II: $1\text{ unit}$ dispenser air galon dan $4\text{ buah}$ teko air stainless seharga $\text{Rp}290.000$.  
-    Tentukan harga $1\text{ unit}$ dispenser air galon dan $1\text{ buah}$ teko air stainless!
+    - Tentukan harga $1\text{ unit}$ dispenser air galon dan $1\text{ buah}$ teko air stainless!
 14. Unit wirausaha santri budidaya ikan lele membeli bibit dan pakan:
     - Tahap I: $1.000\text{ ekor}$ benih lele dan $2\text{ sak}$ pakan pelet seharga $\text{Rp}340.000$.
     - Tahap II: $2.000\text{ ekor}$ benih lele dan $3\text{ sak}$ pakan pelet seharga $\text{Rp}560.000$.  
-    Tentukan harga $1.000\text{ ekor}$ benih lele dan $1\text{ sak}$ pakan pelet!
+    - Tentukan harga $1.000\text{ ekor}$ benih lele dan $1\text{ sak}$ pakan pelet!
 15. Pengurus kebun pondok membeli bibit pohon buah berkah:
     - Pembelian I: $3\text{ bibit}$ pohon tin dan $2\text{ bibit}$ pohon kurma seharga $\text{Rp}270.000$.
     - Pembelian II: $2\text{ bibit}$ pohon tin dan $4\text{ bibit}$ pohon kurma seharga $\text{Rp}420.000$.  
-    Tentukan harga $1\text{ bibit}$ pohon tin dan $1\text{ bibit}$ pohon kurma!
+    - Tentukan harga $1\text{ bibit}$ pohon tin dan $1\text{ bibit}$ pohon kurma!
 16. Dapur umum pondok membeli bahan rempah-rempah bumbu masak:
     - Pembelian I: $4\text{ kg}$ bawang merah dan $3\text{ kg}$ bawang putih seharga $\text{Rp}220.000$.
     - Pembelian II: $2\text{ kg}$ bawang merah dan $5\text{ kg}$ bawang putih seharga $\text{Rp}220.000$.  
-    Tentukan harga $1\text{ kg}$ bawang merah dan $1\text{ kg}$ bawang putih!
+    - Tentukan harga $1\text{ kg}$ bawang merah dan $1\text{ kg}$ bawang putih!
 17. Pengurus asrama memesan mebel perlengkapan belajar santri:
     - Pesanan I: $3\text{ unit}$ meja belajar lipat dan $2\text{ unit}$ rak buku gantung seharga $\text{Rp}260.000$.
     - Pesanan II: $4\text{ unit}$ meja belajar lipat dan $3\text{ unit}$ rak buku gantung seharga $\text{Rp}365.000$.  
-    Tentukan harga $1\text{ unit}$ meja belajar lipat dan $1\text{ unit}$ rak buku gantung!
+    - Tentukan harga $1\text{ unit}$ meja belajar lipat dan $1\text{ unit}$ rak buku gantung!
 18. Santri piket pengingat waktu salat membeli jam dinding dan jadwal salat:
     - Pembelian I: $2\text{ unit}$ jam dinding digital azan dan $3\text{ buah}$ kalender hijriah dinding seharga $\text{Rp}460.000$.
     - Pembelian II: $1\text{ unit}$ jam dinding digital azan dan $4\text{ buah}$ kalender hijriah dinding seharga $\text{Rp}280.000$.  
-    Tentukan harga satuan $1\text{ unit}$ jam digital azan dan $1\text{ buah}$ kalender hijriah dinding!
+    - Tentukan harga satuan $1\text{ unit}$ jam digital azan dan $1\text{ buah}$ kalender hijriah dinding!
 19. Panitia manasik haji santri membeli perlengkapan peragaan:
     - Pembelian I: $5\text{ set}$ kain ihram santri dan $4\text{ buah}$ sabuk haji seharga $\text{Rp}460.000$.
     - Pembelian II: $3\text{ set}$ kain ihram santri dan $2\text{ buah}$ sabuk haji seharga $\text{Rp}260.000$.  
-    Tentukan harga $1\text{ set}$ kain ihram dan $1\text{ buah}$ sabuk haji!
+    - Tentukan harga $1\text{ set}$ kain ihram dan $1\text{ buah}$ sabuk haji!
 20. Santri panitia kajian majelis taklim membeli mikrofon nirkabel dan kabel cadangan:
     - Pembelian I: $2\text{ set}$ mikrofon nirkabel dan $3\text{ gulung}$ kabel audio seharga $\text{Rp}540.000$.
     - Pembelian II: $1\text{ set}$ mikrofon nirkabel dan $4\text{ gulung}$ kabel audio seharga $\text{Rp}370.000$.  
-    Tentukan harga $1\text{ set}$ mikrofon nirkabel dan $1\text{ gulung}$ kabel audio!
+    - Tentukan harga $1\text{ set}$ mikrofon nirkabel dan $1\text{ gulung}$ kabel audio!
 
 ---
 
@@ -486,7 +557,9 @@ x = \frac{D_x}{D}, \quad y = \frac{D_y}{D}
 1. Tentukan determinan dan invers dari matriks $A = \begin{pmatrix} 6 & 8 \\ 2 & 3 \end{pmatrix}$, kemudian buktikan bahwa $A \cdot A^{-1} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$!
 2. Selesaikan sistem persamaan linear berikut murni menggunakan Aturan Determinan Cramer:
 
+$$
 \begin{cases} 4x - 3y = 17 \\ 2x + 5y = 2 \end{cases}
+$$
 
 3. **Soal Kontekstual Aktivitas Pondok Pesantren:**  
    Pengurus pos kesehatan pesantren membeli dua jenis obat herbal untuk persediaan santri:
